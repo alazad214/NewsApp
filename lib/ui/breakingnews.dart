@@ -14,12 +14,12 @@ class BreakingNews extends StatelessWidget {
           future: news_service.getBreakingNews(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              List<NewsModel> articleModel  = snapshot.data ?? [];
+              List<NewsModel> articleModel = snapshot.data ?? [];
               return ListView.builder(
                 itemBuilder: (context, index) {
-                  return NewsItemList(newsModel: articleModel [index]);
+                  return NewsItemList(newsModel: articleModel[index]);
                 },
-                itemCount: articleModel .length,
+                itemCount: articleModel.length,
               );
             }
             return Center(child: CircularProgressIndicator());

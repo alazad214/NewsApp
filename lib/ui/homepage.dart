@@ -51,13 +51,13 @@ class HomePage extends StatelessWidget {
                 title: Text(
                   AppString.appName,
                   style:
-                      TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
+                      TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
                 backgroundColor: Colors.teal,
                 titleSpacing: 0,
                 bottom: TabBar(
                   indicatorColor: Colors.black,
-                  labelStyle: TextStyle(fontSize: 18.sp),
+                  labelStyle: TextStyle(fontSize: 18),
                   tabs: [
                     Tab(
                       text: "Breaking News",

@@ -14,7 +14,7 @@ class NewsDetails extends StatefulWidget {
 }
 
 class _NewsDetailsState extends State<NewsDetails> {
-  final Uri _url = Uri.parse('https://flutter.dev');
+
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class _NewsDetailsState extends State<NewsDetails> {
               "Source: " + widget.newsModel.source!.name.toString(),
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
-              style: TextStyle(color: Colors.black, fontSize: 18.sp),
+              style: TextStyle(color: Colors.black, fontSize: 18),
             ),
             decoration: BoxDecoration(
                 color: Colors.blueGrey,
@@ -51,7 +51,7 @@ class _NewsDetailsState extends State<NewsDetails> {
                     bottomRight: Radius.circular(5))),
           ),
           Padding(
-            padding: EdgeInsets.all(10.h),
+            padding: EdgeInsets.all(10),
             child: Text(
               widget.newsModel.description.toString(),
               style: TextStyle(fontSize: 16, color: Colors.black),

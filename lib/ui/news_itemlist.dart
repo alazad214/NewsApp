@@ -54,7 +54,7 @@ class NewsItemList extends StatelessWidget {
                   newsModel.source!.name.toString(),
                   overflow: TextOverflow.ellipsis,
                   maxLines: 1,
-                  style: TextStyle(color: Colors.black, fontSize: 18.sp),
+                  style: TextStyle(color: Colors.black, fontSize: 18),
                 )),
             Container(
               width: double.infinity,
@@ -62,7 +62,7 @@ class NewsItemList extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Text(
                 newsModel.title.toString(),
-                style: TextStyle(fontSize: 16.sp),
+                style: TextStyle(fontSize: 16),
               ),
             )
           ],

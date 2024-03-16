@@ -39,7 +39,7 @@ class Splash_Screen extends StatefulWidget {
 class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Get.off(HomePage());
       //Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));
     });
@@ -56,13 +56,13 @@ class _Splash_ScreenState extends State<Splash_Screen> {
           children: [
             AnimatedTextKit(
               animatedTexts: [
-                RotateAnimatedText("Flutter News App",
+                RotateAnimatedText("News App",
                     textStyle:
-                        const TextStyle(fontSize: 30, fontFamily: "Font1"),
+                        const TextStyle(fontSize: 22, fontFamily: "Font1"),
                     duration: const Duration(seconds: 5))
               ],
             ),
-            Lottie.asset('asset/anim/loading.json', height: 120)
+            Lottie.asset('asset/anim/loading.json', height: 100)
           ],
         ),
       ),
