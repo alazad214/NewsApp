@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:newsapp/const/app_colors.dart';
 import 'package:newsapp/model/news_model.dart';
 import 'package:newsapp/ui/newsdetails.dart';
+
+import '../utils/app_colors.dart';
 
 class NewsItemList extends StatelessWidget {
   final NewsModel newsModel;
@@ -38,7 +38,7 @@ class NewsItemList extends StatelessWidget {
               ),
             ),
             CachedNetworkImage(
-              height: 250,
+              height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
               imageUrl: newsModel.urlToImage.toString(),
@@ -62,7 +62,7 @@ class NewsItemList extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Text(
                 newsModel.title.toString(),
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 14),
               ),
             )
           ],
