@@ -40,7 +40,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
                     duration: const Duration(seconds: 5))
               ],
             ),
-            Lottie.asset('asset/anim/loading.json', height: 100)
+            Lottie.asset('asset/anim/loading.json', height: 95)
           ],
         ),
       ),

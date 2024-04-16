@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="আন্তর্জাতিক নিউজ"
+        android:label="News App"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
